@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #102033;
+  --color-paper: #f6f3ee;
+  --color-card: #fffdfb;
+  --color-coral: #e85c2a;
+  --color-on-coral: #fff8f4;
+  --color-muted: #5c6b7a;
+  --color-line: #e4ddd2;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-display: "Unbounded", "Manrope", sans-serif;
+  --spacing-stage: 34rem;
+  --shadow-panel: 0 28px 70px -36px color-mix(in srgb, var(--color-ink) 42%, transparent);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+    text-rendering: optimizeLegibility;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-coral);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-coral) 28%, white);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  .panel {
+    background: var(--color-card);
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-panel);
+  }
+
+  .btn-coral {
+    background: var(--color-coral);
+    color: var(--color-on-coral);
+  }
+
+  .btn-coral:hover {
+    background: color-mix(in srgb, var(--color-coral) 86%, black);
+  }
+
+  .ink-scrim {
+    background: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--color-ink) 82%, transparent),
+      color-mix(in srgb, var(--color-ink) 8%, transparent) 62%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
