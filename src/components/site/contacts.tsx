@@ -12,7 +12,7 @@ export function Contacts() {
             Офис в Москве и связь в мессенджерах
           </h2>
           <p className="mt-4 text-muted">
-            Напишите в Telegram или MAX на {PHONE_DISPLAY}. Канал — отдельно, там новости и подборки.
+            Напишите в Telegram или MAX на {PHONE_DISPLAY}. Так же переходите на наш канал, там новости, подборки и горящие предложения.
           </p>
         </div>
 
