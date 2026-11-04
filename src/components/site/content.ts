@@ -8,7 +8,7 @@ export const MAP_HREF = `https://yandex.ru/maps/?text=${encodeURIComponent(
   "Ленинградское шоссе 228к1, Москва",
 )}`;
 
-export const MODULE_ID = "2c8a7e1a-6c13-40c0-aec9-e34842bbcd24";
+export const MODULE_ID = "7bf5e30a-ce8b-42de-a422-415a7d152914";
 export const MODULE_SRC = "https://front.sletat.ru/modules/module6/latest/module.js";
 
 export const benefits = [
