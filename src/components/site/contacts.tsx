@@ -1,4 +1,5 @@
 import { MapPin, MessageCircle, Phone, Send } from "lucide-react";
+import { LeadButton } from "@/components/site/lead-dialog";
 import { ADDRESS, MAP_HREF, MAX_WEB, PHONE_DISPLAY, PHONE_TEL, TG_CHANNEL, TG_CHAT } from "@/components/site/content";
 
 export function Contacts() {
@@ -58,6 +59,9 @@ export function Contacts() {
             </a>
           </div>
           <p className="mt-4 text-sm text-muted">Telegram и MAX: {PHONE_DISPLAY}</p>
+          <LeadButton className="btn-coral mt-6 inline-flex h-12 items-center rounded-full px-5 text-sm font-semibold">
+            Оставить заявку
+          </LeadButton>
         </div>
       </div>
     </section>

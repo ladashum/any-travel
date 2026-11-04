@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
+import { LeadButton } from "@/components/site/lead-dialog";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/components/site/content";
 import { Logo } from "@/components/site/logo";
 
@@ -29,6 +30,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <LeadButton className="inline-flex h-11 items-center rounded-full border border-line bg-card px-4 text-sm font-semibold hover:border-coral">
+            Заявка
+          </LeadButton>
           <a
             href={PHONE_TEL}
             className="btn-coral inline-flex h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold"
@@ -64,6 +68,14 @@ export function SiteHeader() {
                 </a>
               </li>
             ))}
+            <li>
+              <LeadButton
+                className="flex h-12 w-full items-center text-base font-medium"
+                onOpen={() => setOpen(false)}
+              >
+                Оставить заявку
+              </LeadButton>
+            </li>
           </ul>
         </nav>
       ) : null}

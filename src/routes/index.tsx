@@ -6,11 +6,13 @@ import { SiteHeader } from "@/components/site/header";
 import { Hero } from "@/components/site/hero";
 import { Places } from "@/components/site/places";
 import { SearchModule } from "@/components/site/search-module";
+import { LeadRoot } from "@/components/site/lead-dialog";
 
 export const Route = createFileRoute("/")({ component: Home });
 
 function Home() {
   return (
+    <LeadRoot>
     <div id="top">
       <SiteHeader />
       <main>
@@ -24,5 +26,6 @@ function Home() {
       </main>
       <SiteFooter />
     </div>
+    </LeadRoot>
   );
 }
