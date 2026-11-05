@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Any Travel — турагентство в Москве с индивидуальным подходом. Поиск туров Слетать.ру, виза и поддержка 24/7.",
+          "Any Travel — турагентство в Москве с индивидуальным подходом. Поиск туров, виза и поддержка 24/7.",
       },
       { name: "theme-color", content: "#102033" },
     ],

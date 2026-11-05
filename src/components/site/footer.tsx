@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div>
           <Logo tone="card" />
           <p className="mt-4 max-w-md text-sm text-card/75">
-            Поиск и сравнение туров — модуль Слетать.ру. Подбор, виза и сопровождение — Any Travel.
+            Поиск и сравнение туров, подбор, виза и сопровождение — Any Travel.
           </p>
         </div>
         <div className="flex flex-col gap-2 text-sm">
