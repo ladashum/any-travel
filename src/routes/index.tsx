@@ -17,7 +17,7 @@ function Home() {
       <SiteHeader />
       <main>
         <Hero />
-        <section id="search" className="mx-auto max-w-6xl scroll-mt-20 overflow-anchor-none px-4 pt-6 pb-4 sm:px-6 sm:pt-8">
+        <section id="search" className="mx-auto max-w-6xl scroll-mt-20 overflow-x-clip overflow-anchor-none px-0 pt-6 pb-4 sm:px-6 sm:pt-8">
           <SearchModule />
         </section>
         <Approach />
